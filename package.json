@@ -1,0 +1,25 @@
+{
+    "name": "lincoln",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "test": "AWS_PROFILE=uposcar sst test",
+        "start": "AWS_PROFILE=uposcar sst start",
+        "build": "AWS_PROFILE=uposcar sst build",
+        "deploy": "AWS_PROFILE=uposcar sst deploy",
+        "remove": "AWS_PROFILE=uposcar sst remove"
+    },
+    "eslintConfig": {
+        "extends": [
+            "serverless-stack"
+        ]
+    },
+    "dependencies": {
+        "@chialab/esbuild-plugin-html": "^0.14.19",
+        "@serverless-stack/cli": "0.63.0",
+        "@serverless-stack/resources": "0.63.0",
+        "aws-cdk-lib": "2.7.0",
+        "eta": "^1.12.3"
+    }
+}
