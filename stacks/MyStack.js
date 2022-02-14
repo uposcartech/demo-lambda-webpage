@@ -15,6 +15,8 @@ export default class MyStack extends sst.Stack {
             },
             routes: {
                 "GET /": "src/lambda.handler",
+                "GET /login": "src/functions/login.handler",
+                "GET /dashboard": "src/functions/dashboard.handler",
             },
         });
 

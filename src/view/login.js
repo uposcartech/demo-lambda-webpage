@@ -16,10 +16,10 @@ export default `
         <div class="mb2 center">
             Lincoln
         </div>
-        <!-- Signup form -->
-        <div id="userfront-mraabo"></div>
+        <!-- Login form -->
+        <div id="userfront-dnddal"></div>
         <div class="mt2 center">
-            <a href="/login">Login</a>
+            <a href="/">Sign up</a>
         </div>
     </div>
 

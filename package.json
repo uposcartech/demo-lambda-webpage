@@ -20,6 +20,7 @@
         "@serverless-stack/cli": "0.63.0",
         "@serverless-stack/resources": "0.63.0",
         "aws-cdk-lib": "2.7.0",
-        "eta": "^1.12.3"
+        "eta": "^1.12.3",
+        "jsonwebtoken": "^8.5.1"
     }
 }
