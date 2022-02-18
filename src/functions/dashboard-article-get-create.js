@@ -1,15 +1,14 @@
 import * as Eta from "eta";
 import authentication from "../lib/authentication.js";
-import { handle } from "../lib/handler.js";
 
-export const handler = handle(async(event) => {
+export async function handler(event) {
     try {
         let verifiedPayload = await authentication(event);
 
         let html = await
         import ("../view/dashboard.js");
 
-        let body = Eta.render(html.default(), {
+        let body = Eta.render(html.default, {
             time: event.requestContext.time,
             verifiedPayload,
         });
@@ -22,4 +21,4 @@ export const handler = handle(async(event) => {
     } catch (e) {
         return { status: 400, error: e };
     }
-});
+}
